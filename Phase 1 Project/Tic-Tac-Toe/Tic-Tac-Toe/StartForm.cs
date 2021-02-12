@@ -18,6 +18,7 @@ namespace Tic_Tac_Toe
             PopulateListBoxRecords();
         }
 
+        // Fills the list box with formated past games data.
         private void PopulateListBoxRecords()
         {
             foreach (DataRow row in ds.Tables[0].Rows)
@@ -27,6 +28,7 @@ namespace Tic_Tac_Toe
             }
         }
 
+        // Connects to the database and executes a stored procedure to get past games data.
         private DataSet GetRecordsDataSet()
         {
             DataSet dataSetResult = new DataSet();
@@ -49,6 +51,8 @@ namespace Tic_Tac_Toe
             return dataSetResult;
         }
 
+        // Checks if entered name already exists in the past games data
+        // then shows GameForm by passing the player's mark and game name.
         private void startGameBtn_Click(object sender, EventArgs e)
         {
             string newName = textBoxNewName.Text.PadRight(10);

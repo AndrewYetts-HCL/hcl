@@ -24,6 +24,7 @@ namespace Tic_Tac_Toe
             if (!isPlayerTurn) MakeComputerMove();
         }
 
+        // Updates the board and button that corresponds to the move parameter.
         public void UpdateBoard(int move, string mark)
         {
             Button[] temp =
@@ -35,10 +36,10 @@ namespace Tic_Tac_Toe
 
             board[move] = mark;
             temp[move].Text = mark;
-            isPlayerTurn = !isPlayerTurn;
             CheckGameOver();
         }
 
+        // Checks if the board has three in a row of the passed mark.
         public bool CheckForWinner(string mark)
         {
             return (board[0] == mark && board[1] == mark && board[2] == mark)
@@ -51,6 +52,7 @@ namespace Tic_Tac_Toe
                 || (board[2] == mark && board[4] == mark && board[6] == mark);
         }
 
+        // Checks if an end condition has been met; otherwise switch turns.
         public void CheckGameOver()
         {
             if (board.Where(e => e == String.Empty).Count() == 0)
@@ -77,8 +79,13 @@ namespace Tic_Tac_Toe
                 startForm.Show();
                 Hide();
             }
+            else
+            {
+                isPlayerTurn = !isPlayerTurn;
+            }
         }
 
+        // Tests if the passed position had the passed mark, would that be a winning move.
         public bool TestWinner(int position, string mark)
         {
             board[position] = mark;
@@ -87,6 +94,9 @@ namespace Tic_Tac_Toe
             return false;
         }
 
+        // Finds a move for the computer by entering the computer mark into 
+        // each empty spot, testing first for a winning move and then a blocking 
+        // move. If neither are found, then selects a random move.
         public void MakeComputerMove()
         {
             for (int i = 0; i < board.Length; i++)
@@ -112,6 +122,7 @@ namespace Tic_Tac_Toe
             if (emptySpots.Length != 0) UpdateBoard(emptySpots[rand.Next(emptySpots.Length)], computerMark);
         }
 
+        // Connects to the database and executes a stored procedure to record the game.
         public void RecordGame(string result)
         {
             string cnnString = System.Configuration.ConfigurationManager.
@@ -136,6 +147,8 @@ namespace Tic_Tac_Toe
             }
         }
 
+        // If the spot is empty and it's the player's turn,
+        // update board with clicked button and switch turns.
         public void BoardClick(int position)
         {
             if (isPlayerTurn && board[position] == String.Empty)
