@@ -8,7 +8,7 @@ namespace Tic_Tac_Toe
 {
     public partial class GameForm : Form
     {
-        private string[] board = { "", "", "", "", "", "", "", "", "" };
+        public string[] board = { "", "", "", "", "", "", "", "", "" };
         private readonly string gameName;
         private readonly string playerMark; 
         private readonly string computerMark;
@@ -24,7 +24,7 @@ namespace Tic_Tac_Toe
             if (!isPlayerTurn) MakeComputerMove();
         }
 
-        private void UpdateBoard(int move, string mark)
+        public void UpdateBoard(int move, string mark)
         {
             Button[] temp =
             {
@@ -39,7 +39,7 @@ namespace Tic_Tac_Toe
             CheckGameOver();
         }
 
-        private bool CheckForWinner(string mark)
+        public bool CheckForWinner(string mark)
         {
             return (board[0] == mark && board[1] == mark && board[2] == mark)
                 || (board[3] == mark && board[4] == mark && board[5] == mark)
@@ -51,7 +51,7 @@ namespace Tic_Tac_Toe
                 || (board[2] == mark && board[4] == mark && board[6] == mark);
         }
 
-        private void CheckGameOver()
+        public void CheckGameOver()
         {
             if (board.Where(e => e == String.Empty).Count() == 0)
             {
@@ -79,15 +79,15 @@ namespace Tic_Tac_Toe
             }
         }
 
-        private bool TestWinner(int idx, string mark)
+        public bool TestWinner(int position, string mark)
         {
-            board[idx] = mark;
+            board[position] = mark;
             if (CheckForWinner(mark)) return true;
-            board[idx] = String.Empty;
+            board[position] = String.Empty;
             return false;
         }
 
-        private void MakeComputerMove()
+        public void MakeComputerMove()
         {
             for (int i = 0; i < board.Length; i++)
             {
@@ -108,11 +108,11 @@ namespace Tic_Tac_Toe
             }
 
             Random rand = new Random();
-            int[] emptySpots = (new int[] { 1, 2, 3, 4, 5, 6, 7, 8 }).Where(e => board[e] == String.Empty).ToArray();
+            int[] emptySpots = (new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8 }).Where(e => board[e] == String.Empty).ToArray();
             if (emptySpots.Length != 0) UpdateBoard(emptySpots[rand.Next(emptySpots.Length)], computerMark);
         }
 
-        private void RecordGame(string result)
+        public void RecordGame(string result)
         {
             string cnnString = System.Configuration.ConfigurationManager.
                 ConnectionStrings["MyConnection"].ConnectionString;
@@ -136,7 +136,7 @@ namespace Tic_Tac_Toe
             }
         }
 
-        private void BoardClick(int position)
+        public void BoardClick(int position)
         {
             if (isPlayerTurn && board[position] == String.Empty)
             {
