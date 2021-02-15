@@ -44,18 +44,16 @@ namespace Tic_Tac_Toe
             // 
             this.markPanel.Controls.Add(this.radioButtonO);
             this.markPanel.Controls.Add(this.radioButtonX);
-            this.markPanel.Location = new System.Drawing.Point(126, 335);
-            this.markPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.markPanel.Location = new System.Drawing.Point(84, 218);
             this.markPanel.Name = "markPanel";
-            this.markPanel.Size = new System.Drawing.Size(150, 69);
+            this.markPanel.Size = new System.Drawing.Size(100, 45);
             this.markPanel.TabIndex = 1;
             // 
             // radioButtonO
             // 
             this.radioButtonO.AutoSize = true;
             this.radioButtonO.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonO.Location = new System.Drawing.Point(76, 11);
-            this.radioButtonO.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonO.Location = new System.Drawing.Point(51, 7);
             this.radioButtonO.Name = "radioButtonO";
             this.radioButtonO.Size = new System.Drawing.Size(46, 31);
             this.radioButtonO.TabIndex = 1;
@@ -67,8 +65,7 @@ namespace Tic_Tac_Toe
             // 
             this.radioButtonX.AutoSize = true;
             this.radioButtonX.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonX.Location = new System.Drawing.Point(4, 11);
-            this.radioButtonX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonX.Location = new System.Drawing.Point(3, 7);
             this.radioButtonX.Name = "radioButtonX";
             this.radioButtonX.Size = new System.Drawing.Size(42, 31);
             this.radioButtonX.TabIndex = 0;
@@ -81,28 +78,26 @@ namespace Tic_Tac_Toe
             this.listBoxRecords.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxRecords.FormattingEnabled = true;
             this.listBoxRecords.ItemHeight = 27;
-            this.listBoxRecords.Location = new System.Drawing.Point(18, 482);
-            this.listBoxRecords.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBoxRecords.Location = new System.Drawing.Point(12, 313);
             this.listBoxRecords.Name = "listBoxRecords";
-            this.listBoxRecords.Size = new System.Drawing.Size(688, 166);
+            this.listBoxRecords.Size = new System.Drawing.Size(460, 85);
             this.listBoxRecords.TabIndex = 3;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(18, 455);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(12, 296);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(690, 8);
+            this.panel3.Size = new System.Drawing.Size(460, 5);
             this.panel3.TabIndex = 5;
             // 
             // textBoxNewName
             // 
             this.textBoxNewName.Font = new System.Drawing.Font("Microsoft PhagsPa", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNewName.Location = new System.Drawing.Point(18, 226);
-            this.textBoxNewName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxNewName.Location = new System.Drawing.Point(12, 147);
+            this.textBoxNewName.MaxLength = 10;
             this.textBoxNewName.Name = "textBoxNewName";
-            this.textBoxNewName.Size = new System.Drawing.Size(688, 45);
+            this.textBoxNewName.Size = new System.Drawing.Size(460, 45);
             this.textBoxNewName.TabIndex = 6;
             this.textBoxNewName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -110,8 +105,7 @@ namespace Tic_Tac_Toe
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 21.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(116, 63);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(77, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(336, 37);
             this.label1.TabIndex = 7;
@@ -120,9 +114,10 @@ namespace Tic_Tac_Toe
             // startGameBtn
             // 
             this.startGameBtn.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startGameBtn.Location = new System.Drawing.Point(357, 335);
+            this.startGameBtn.Location = new System.Drawing.Point(238, 218);
+            this.startGameBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.startGameBtn.Name = "startGameBtn";
-            this.startGameBtn.Size = new System.Drawing.Size(262, 69);
+            this.startGameBtn.Size = new System.Drawing.Size(175, 45);
             this.startGameBtn.TabIndex = 8;
             this.startGameBtn.Text = "Start Game";
             this.startGameBtn.UseVisualStyleBackColor = true;
@@ -130,10 +125,10 @@ namespace Tic_Tac_Toe
             // 
             // StartForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(726, 709);
+            this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.startGameBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxNewName);
@@ -141,7 +136,6 @@ namespace Tic_Tac_Toe
             this.Controls.Add(this.listBoxRecords);
             this.Controls.Add(this.markPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

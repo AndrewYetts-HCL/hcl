@@ -154,7 +154,7 @@ namespace Tic_Tac_Toe
             if (isPlayerTurn && board[position] == String.Empty)
             {
                 UpdateBoard(position, playerMark);
-                MakeComputerMove();
+                if (!isPlayerTurn) MakeComputerMove();
             }
         }
 
