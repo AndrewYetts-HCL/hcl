@@ -20,3 +20,14 @@ C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\hcl\Phase 1 Projec
 C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\hcl\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic-Tac-Toe.csproj.CoreCompileInputs.cache
 C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\hcl\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic-Tac-Toe.exe
 C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\hcl\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic-Tac-Toe.pdb
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\bin\Debug\Tic-Tac-Toe.exe.config
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\bin\Debug\Tic-Tac-Toe.exe
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\bin\Debug\Tic-Tac-Toe.pdb
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic-Tac-Toe.csprojAssemblyReference.cache
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic_Tac_Toe.GameForm.resources
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic_Tac_Toe.Properties.Resources.resources
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic_Tac_Toe.StartForm.resources
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic-Tac-Toe.csproj.GenerateResource.cache
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic-Tac-Toe.csproj.CoreCompileInputs.cache
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic-Tac-Toe.exe
+C:\Users\andrew.yetts\OneDrive - HCL Technologies Ltd\Desktop\github\Phase 1 Project\Tic-Tac-Toe\Tic-Tac-Toe\obj\Debug\Tic-Tac-Toe.pdb

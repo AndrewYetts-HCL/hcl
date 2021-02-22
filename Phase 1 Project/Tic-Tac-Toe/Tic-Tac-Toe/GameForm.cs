@@ -149,50 +149,14 @@ namespace Tic_Tac_Toe
 
         // If the spot is empty and it's the player's turn,
         // update board with clicked button and switch turns.
-        public void BoardClick(int position)
+        private void ButtonClick(object sender, EventArgs e)
         {
+            var position = Convert.ToInt32((sender as Button).Tag);
             if (isPlayerTurn && board[position] == String.Empty)
             {
                 UpdateBoard(position, playerMark);
                 if (!isPlayerTurn) MakeComputerMove();
             }
-        }
-
-        private void buttonA1_Click(object sender, EventArgs e)
-        {
-            BoardClick(0);
-        }
-        private void buttonA2_Click(object sender, EventArgs e)
-        {
-            BoardClick(1);
-        }
-        private void buttonA3_Click(object sender, EventArgs e)
-        {
-            BoardClick(2);
-        }
-        private void buttonB1_Click(object sender, EventArgs e)
-        {
-            BoardClick(3);
-        }
-        private void buttonB2_Click(object sender, EventArgs e)
-        {
-            BoardClick(4);
-        }
-        private void buttonB3_Click(object sender, EventArgs e)
-        {
-            BoardClick(5);
-        }
-        private void buttonC1_Click(object sender, EventArgs e)
-        {
-            BoardClick(6);
-        }
-        private void buttonC2_Click(object sender, EventArgs e)
-        {
-            BoardClick(7);
-        }
-        private void buttonC3_Click(object sender, EventArgs e)
-        {
-            BoardClick(8);
         }
     }
 }

@@ -52,8 +52,9 @@ namespace Tic_Tac_Toe
             this.buttonA1.Name = "buttonA1";
             this.buttonA1.Size = new System.Drawing.Size(100, 100);
             this.buttonA1.TabIndex = 1;
+            this.buttonA1.Tag = "0";
             this.buttonA1.UseVisualStyleBackColor = false;
-            this.buttonA1.Click += new System.EventHandler(this.buttonA1_Click);
+            this.buttonA1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonA2
             // 
@@ -63,8 +64,9 @@ namespace Tic_Tac_Toe
             this.buttonA2.Name = "buttonA2";
             this.buttonA2.Size = new System.Drawing.Size(100, 100);
             this.buttonA2.TabIndex = 2;
+            this.buttonA2.Tag = "1";
             this.buttonA2.UseVisualStyleBackColor = false;
-            this.buttonA2.Click += new System.EventHandler(this.buttonA2_Click);
+            this.buttonA2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonA3
             // 
@@ -74,8 +76,9 @@ namespace Tic_Tac_Toe
             this.buttonA3.Name = "buttonA3";
             this.buttonA3.Size = new System.Drawing.Size(100, 100);
             this.buttonA3.TabIndex = 3;
+            this.buttonA3.Tag = "2";
             this.buttonA3.UseVisualStyleBackColor = false;
-            this.buttonA3.Click += new System.EventHandler(this.buttonA3_Click);
+            this.buttonA3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonB1
             // 
@@ -85,8 +88,9 @@ namespace Tic_Tac_Toe
             this.buttonB1.Name = "buttonB1";
             this.buttonB1.Size = new System.Drawing.Size(100, 100);
             this.buttonB1.TabIndex = 4;
+            this.buttonB1.Tag = "3";
             this.buttonB1.UseVisualStyleBackColor = false;
-            this.buttonB1.Click += new System.EventHandler(this.buttonB1_Click);
+            this.buttonB1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonB2
             // 
@@ -96,8 +100,9 @@ namespace Tic_Tac_Toe
             this.buttonB2.Name = "buttonB2";
             this.buttonB2.Size = new System.Drawing.Size(100, 100);
             this.buttonB2.TabIndex = 5;
+            this.buttonB2.Tag = "4";
             this.buttonB2.UseVisualStyleBackColor = false;
-            this.buttonB2.Click += new System.EventHandler(this.buttonB2_Click);
+            this.buttonB2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonB3
             // 
@@ -107,8 +112,9 @@ namespace Tic_Tac_Toe
             this.buttonB3.Name = "buttonB3";
             this.buttonB3.Size = new System.Drawing.Size(100, 100);
             this.buttonB3.TabIndex = 6;
+            this.buttonB3.Tag = "5";
             this.buttonB3.UseVisualStyleBackColor = false;
-            this.buttonB3.Click += new System.EventHandler(this.buttonB3_Click);
+            this.buttonB3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonC1
             // 
@@ -118,8 +124,9 @@ namespace Tic_Tac_Toe
             this.buttonC1.Name = "buttonC1";
             this.buttonC1.Size = new System.Drawing.Size(100, 100);
             this.buttonC1.TabIndex = 7;
+            this.buttonC1.Tag = "6";
             this.buttonC1.UseVisualStyleBackColor = false;
-            this.buttonC1.Click += new System.EventHandler(this.buttonC1_Click);
+            this.buttonC1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonC2
             // 
@@ -129,8 +136,9 @@ namespace Tic_Tac_Toe
             this.buttonC2.Name = "buttonC2";
             this.buttonC2.Size = new System.Drawing.Size(100, 100);
             this.buttonC2.TabIndex = 8;
+            this.buttonC2.Tag = "7";
             this.buttonC2.UseVisualStyleBackColor = false;
-            this.buttonC2.Click += new System.EventHandler(this.buttonC2_Click);
+            this.buttonC2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // buttonC3
             // 
@@ -140,8 +148,9 @@ namespace Tic_Tac_Toe
             this.buttonC3.Name = "buttonC3";
             this.buttonC3.Size = new System.Drawing.Size(100, 100);
             this.buttonC3.TabIndex = 9;
+            this.buttonC3.Tag = "8";
             this.buttonC3.UseVisualStyleBackColor = false;
-            this.buttonC3.Click += new System.EventHandler(this.buttonC3_Click);
+            this.buttonC3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // panel1
             // 
