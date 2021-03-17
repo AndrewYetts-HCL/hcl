@@ -18,13 +18,18 @@ namespace InventoryManager.Controllers
         }
 
         // GET: InventoryItems
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchName, string searchCategory)
         {
             var inventoryItems = from i in _context.InventoryItem select i;
 
-            if (!String.IsNullOrEmpty(searchString))
+            if (!String.IsNullOrEmpty(searchName))
             {
-                inventoryItems = inventoryItems.Where(i => i.Name.Contains(searchString));
+                inventoryItems = inventoryItems.Where(i => i.Name.Contains(searchName));
+            }
+
+            if (!String.IsNullOrEmpty(searchCategory))
+            {
+                inventoryItems = inventoryItems.Where(i => i.Category.Contains(searchCategory));
             }
 
             return View(await inventoryItems.ToListAsync());

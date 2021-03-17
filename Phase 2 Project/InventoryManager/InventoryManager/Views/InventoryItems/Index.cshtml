@@ -6,11 +6,12 @@
 
 
 <form asp-controller="InventoryItems" asp-action="Index">
-    <h1 class="text-left">Your Inventory</h1>
+    <h1 class="text-md-left m-1">Your Inventory</h1>
 
-    <div class="text-right">
-        <input type="text" name="searchString" />
-        <input type="submit" value="Filter" />
+    <div class="text-right m-3">
+        <input type="text" name="searchName" placeholder="Name" />
+        <input type="text" name="searchCategory" placeholder="Category" />
+        <input type="submit" value="Search" />
     </div>
 </form>
 
