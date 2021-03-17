@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using InventoryManager.Data;
@@ -25,7 +23,9 @@ namespace InventoryManager.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<InventoryItem>>> GetInventoryItem()
         {
-            return await _context.InventoryItem.ToListAsync();
+            var list = await _context.InventoryItem.ToListAsync();
+            var json = list.ToString();
+            return list;
         }
 
         // GET: api/Values/5
