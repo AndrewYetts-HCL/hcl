@@ -8,20 +8,16 @@ namespace InventoryManager.Tests.Controllers
     public class HomeControllerTests
     {
         [Fact]
-        public void AboutTest()
+        public void IndexTest()
         {
             // Arrange
             HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.Index() as ViewResult;
 
             // Assert
             Assert.NotNull(result);
         }
-
-
-
-
     }
 }

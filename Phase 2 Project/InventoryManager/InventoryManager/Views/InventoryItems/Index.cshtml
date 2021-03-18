@@ -4,14 +4,13 @@
     ViewData["Title"] = "Inventory";
 }
 
-
 <form asp-controller="InventoryItems" asp-action="Index">
     <h1 class="text-md-left m-1">Your Inventory</h1>
 
     <div class="text-right m-3">
         <input type="text" name="searchName" placeholder="Name" />
         <input type="text" name="searchCategory" placeholder="Category" />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" class="btn btn-dark"/>
     </div>
 </form>
 
@@ -56,10 +55,7 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">
-                    <input type="button" value="Edit" class="btn btn-warning" />
-                </a>
-                <a asp-action="Details" asp-route-id="@item.Id">
-                    <input type="button" value="Details" class="btn btn-info" />
+                    <input type="button" value="Edit" class="mr-lg-2 btn btn-primary" />
                 </a>
                 <a asp-action="Delete" asp-route-id="@item.Id">
                     <input type="button" value="Delete" class="btn btn-danger" />
@@ -72,6 +68,6 @@
 
 <div class="text-center mt-5">
     <a asp-action="Create">
-        <input type="button" value="Add New Item" class="btn btn-primary align-content-center" />
+        <input type="button" value="Add New Item" class="btn btn-success align-content-center" />
     </a>
 </div>

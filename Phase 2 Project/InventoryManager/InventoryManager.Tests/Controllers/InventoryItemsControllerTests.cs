@@ -16,20 +16,7 @@ namespace InventoryManager.Tests
             InventoryItemsController controller = GetTestController();
 
             // Act
-            var result = controller.Index("item");
-
-            // Assert
-            Assert.NotNull(result);
-        }
-
-        [Fact]
-        public void DetailsTest()
-        {
-            // Arrange
-            InventoryItemsController controller = GetTestController();
-
-            // Act
-            var result = controller.Details(1);
+            var result = controller.Index("item", "category");
 
             // Assert
             Assert.NotNull(result);
