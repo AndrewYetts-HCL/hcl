@@ -7,10 +7,10 @@
 <form asp-controller="InventoryItems" asp-action="Index">
     <h1 class="text-md-left m-1">Your Inventory</h1>
 
-    <div class="text-right m-3">
-        <input type="text" name="searchName" placeholder="Name" />
-        <input type="text" name="searchCategory" placeholder="Category" />
-        <input type="submit" value="Search" class="btn btn-dark"/>
+    <div class="text-right m-3 row">
+        <input class="form-control offset-7 col-2 mr-2" type="text" name="searchName" placeholder="Name" />
+        <input class="form-control col-2 mr-2" type="text" name="searchCategory" placeholder="Category" />
+        <input class="btn btn-secondary" type="submit" value="Search"/>
     </div>
 </form>
 
